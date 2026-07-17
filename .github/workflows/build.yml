@@ -18,7 +18,7 @@ jobs:
         run: npm install -g pake-cli
 
       - name: Compile Website to Exe
-        run: pake https://fedpromptly.com --name "FEDPromptly" --transparent
+        run: pake https://www.fedpromptly.com/home --name "FEDPromptly"
 
       - name: Compress App into ZIP File
         run: Compress-Archive -Path ./*.exe -DestinationPath ./FEDPromptly-Windows.zip
