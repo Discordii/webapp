@@ -16,11 +16,11 @@
     ],
     "win": {
       "target": "nsis",
-      "icon": "src/do.ico"
+      "icon": "src/dow.ico"
     },
     "nsis": {
-      "installerIcon": "src/do.ico",
-      "uninstallerIcon": "src/do.ico"
+      "installerIcon": "src/dow.ico",
+      "uninstallerIcon": "src/dow.ico"
     }
   },
   "devDependencies": {
