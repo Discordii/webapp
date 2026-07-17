@@ -1,6 +1,6 @@
 {
   "name": "fedpromptly-desktop",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "Your Name",
   "description": "Desktop client for Fedpromptly",
   "main": "src/main.js",
