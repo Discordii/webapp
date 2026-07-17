@@ -13,7 +13,7 @@ function createWindow() {
     },
   });
 
-  win.loadURL('https://www.pokejumper.org');
+  win.loadURL('https://www.Fedpromptly');
 }
 
 app.whenReady().then(createWindow);
