@@ -13,7 +13,7 @@ function createWindow() {
     },
   });
 
-  win.loadURL('https://www.Fedpromptly');
+  win.loadURL('https://www.Fedpromptly.com');
 }
 
 app.whenReady().then(createWindow);
