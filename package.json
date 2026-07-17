@@ -16,11 +16,11 @@
     ],
     "win": {
       "target": "nsis",
-      "icon": "src/pokemon_7025.ico"
+      "icon": "src/Dakirby309-Windows-8-Metro-Folders-OS-Windows-8-Metro.ico"
     },
     "nsis": {
-      "installerIcon": "src/pokemon_7025.ico",
-      "uninstallerIcon": "src/pokemon_7025.ico"
+      "installerIcon": "src/Dakirby309-Windows-8-Metro-Folders-OS-Windows-8-Metro.ico",
+      "uninstallerIcon": "src/Dakirby309-Windows-8-Metro-Folders-OS-Windows-8-Metro.ico"
     }
   },
   "devDependencies": {
