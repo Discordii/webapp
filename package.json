@@ -16,7 +16,6 @@
     ],
     "win": {
       "target": "nsis",
-      "icon": "src/icon.ico"
     }
   },
   "devDependencies": {
