@@ -6,7 +6,7 @@
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
-    "dist": "electron-builder --win"
+    "dist": "electron-builder --win --publish never"
   },
   "build": {
     "appId": "com.yourdomain.app",
@@ -19,8 +19,8 @@
       "icon": "src/123266.ico"
     },
     "nsis": {
-      "installerIcon": "src/1233266.ico",
-      "uninstallerIcon": "src/1233266.ico"
+      "installerIcon": "src/123266.ico",
+      "uninstallerIcon": "src/123266.ico"
     }
   },
   "devDependencies": {
