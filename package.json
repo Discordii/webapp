@@ -16,11 +16,11 @@
     ],
     "win": {
       "target": "nsis",
-      "icon": "src/icon.ico"
+      "icon": "src/pokemon_7025.ico"
     },
     "nsis": {
-      "installerIcon": "src/icon.ico",
-      "uninstallerIcon": "src/icon.ico"
+      "installerIcon": "src/pokemon_7025.ico",
+      "uninstallerIcon": "src/pokemon_7025.ico"
     }
   },
   "devDependencies": {
