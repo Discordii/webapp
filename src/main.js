@@ -1,27 +1,30 @@
-const { app, BrowserWindow } = require('electron');
-const path = require('path');
-
-function createWindow() {
-  const win = new BrowserWindow({
-    width: 1200,
-    height: 800,
-    icon: path.join(__dirname, '123266.ico'),
-    webPreferences: {
-      preload: path.join(__dirname, 'preload.js'),
-      nodeIntegration: false,
-      contextIsolation: true,
+{
+  "name": "fedpromptly-desktop",
+  "version": "1.0.1",
+  "author": "Your Name",
+  "description": "Desktop client for FedPromptly.com",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win --publish never"
+  },
+  "build": {
+    "appId": "com.yourdomain.app",
+    "productName": "FedPromptly",
+    "files": [
+      "src/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "src/123266.ico"
     },
-  });
-
-  win.loadURL('https://www.fedpromptly.com');
+    "nsis": {
+      "installerIcon": "src/123266.ico",
+      "uninstallerIcon": "src/123266.ico"
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.0.0"
+  }
 }
-
-app.whenReady().then(createWindow);
-
-app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') app.quit();
-});
-
-app.on('activate', () => {
-  if (BrowserWindow.getAllWindows().length === 0) createWindow();
-});
