@@ -1,31 +1,24 @@
-# FEDPromptly Desktop App — Setup
+# FedPromptly Desktop
 
-This folder contains a GitHub Actions workflow that packages
-https://www.fedpromptly.com/home into a native desktop app (.exe / .msi)
-using Pake (https://github.com/tw93/Pake).
+A standalone desktop wrapper for [FedPromptly.com](https://www.fedpromptly.com), built with Electron.
 
-## How to use
+## Download
 
-1. Unzip this into the ROOT of your GitHub repo, so the file ends up at:
-   .github/workflows/build.yml
+Pre-built installers are available in the **Releases** section, or as build artifacts from the Actions tab.
 
-2. Commit and push it to GitHub.
+## Development
 
-3. In your repo: Settings -> Actions -> General -> Workflow permissions
-   -> select "Read and write permissions" -> Save.
+```bash
+npm install
+npm start
+```
 
-4. Go to the Actions tab -> click "Build FEDPromptly Desktop App"
-   -> click "Run workflow".
+## Build for all platforms
 
-5. Wait for the run to turn green (first run: ~10-15 min, it's compiling
-   Pake itself). Open the finished run and scroll down to "Artifacts" --
-   download the zip there. That's your actual installable app.
+```bash
+npm run dist
+```
 
-## Notes
+## License
 
-- The built app just opens a window pointed at your live site. It needs
-  internet to load, same as a browser tab -- it's not an offline copy.
-- To also build for Mac/Linux, edit build.yml and add macos-latest and/or
-  ubuntu-latest to the "matrix: os:" list.
-- To use your own icon, uncomment the "icon:" line in build.yml and point
-  it at a hosted image URL.
+MIT
