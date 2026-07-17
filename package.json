@@ -16,11 +16,11 @@
     ],
     "win": {
       "target": "nsis",
-      "icon": "src/download (19) (Custom).ico"
+      "icon": "src/123266.ico"
     },
     "nsis": {
-      "installerIcon": "src/download (19) (Custom).ico",
-      "uninstallerIcon": "src/download (19) (Custom).ico"
+      "installerIcon": "src/123266.ico",
+      "uninstallerIcon": "src/123266.ico"
     }
   },
   "devDependencies": {
